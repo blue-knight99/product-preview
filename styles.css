@@ -1,0 +1,117 @@
+ @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Fugaz+One&family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&family=Nunito&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ :root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+
+
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+ }
+
+ body{
+    background-color: var(--Cream);
+ }
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .card{
+    width: 600px;
+    height: 450px;
+    background-color: var(--White);
+    display: flex;
+    flex-flow: row nowrap;
+    /* justify-content: center;
+    align-items: center; */
+    margin-top: 15vh;
+    border-radius: 12px;
+ }
+
+ .card-left img{
+    width: 300px;
+    height: 450px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+ }
+
+ footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+ }
+
+ .card-right{
+    font-family: "Montserrat", sans-serif;
+    color: var(--Dark-grayish-blue);
+    margin-left: 25px;
+    margin-right: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    font-weight: 500;
+ }
+
+ .card-right .header1{
+    letter-spacing: 0.4rem;
+    margin-top: 20px;
+ }
+
+ .card-right .header2{
+    color: var(--Very-dark-blue);
+    font-family: "Fraunces";
+    margin-top: 20px;
+    font-weight: 700;
+ }
+
+ .card-right .description{
+    margin-top: 25px;
+ }
+
+ .card-right .prices{
+    margin-top: 20px;
+    position: relative;
+ }
+
+ .card-right .prices .line{
+    text-decoration: line-through;
+    position: absolute;
+    top: 8px;
+ }
+
+ .card-right .prices .big{
+    color: var(--Dark-cyan);
+    font-family: "Fraunces", sans-serif;
+    font-size: 30px;
+    margin-right: 20px;
+    text-decoration: none;
+ }
+
+ button{
+    width: 100%;
+    margin-top: 25px;
+    height: 45px;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+ }
+
+ button img{
+    margin-right: 10px;
+ }
+
+ button:hover{
+    background-color: var(--Very-dark-blue);
+ }
+
+
